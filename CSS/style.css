@@ -1,0 +1,1170 @@
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+/* ------------------------------------------------- */
+/* -------------- BODY ----------------------------- */
+/* ------------------------------------------------- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h4 {
+    color: black;
+    margin: 0px;
+    margin-left: 3%;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-bleu {
+    color: #0065fc;
+}
+
+.color-grey {
+    color: #DADADA;
+}
+
+.size-100 {      /* Utilisé pour la nav et activités a marseille article 3 */
+    width: 100%;
+}
+
+.TitreHeader {
+	font-size: medium;
+}
+
+/* ------------------------------------------------- */
+/* -------------- FLEX ----------------------------- */
+/* ------------------------------------------------- */
+
+.flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-between-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column-centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-column-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------------ */
+/* -------------- Recherche ----------------------------- */
+/* ------------------------------------------------------ */
+
+.BarreRecherche {
+    border-radius: 15px;
+    margin-left: 2.5%;
+    margin-bottom: 30px;
+}
+
+.logosearch {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 12px 0px 0px 12px ;
+    height: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.zone-text {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    resize: none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    width: 150px;
+    height: 32px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 30px;
+    padding-left: 15px;
+    opacity: 1
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+    opacity: 1;
+}
+
+input {
+    outline: none;
+}
+
+input[type="submit"] {
+	background: none;
+	color: inherit;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 12px 12px 0px ;
+    height: 50px;
+    color: white;
+	cursor: pointer;
+	outline: inherit;
+    font-size: large;
+    font-weight: bold;
+}
+
+.buttonSearch {
+    display: flex;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    border: 1px solid rgb(0, 101, 252);
+    border-radius: 0px 12px 12px 0px ;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.buttonSearch:active {
+	position:relative;
+	top:1px;
+}
+
+/* ------------------------------------------------------ */
+/* -------------- Filtre -------------------------------- */
+/* ------------------------------------------------------ */
+
+.filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+.Mobile-none {
+    
+}
+
+.PC-none {
+    display: none;
+}
+
+.marg-filtre {
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.myButton {
+    display: flex;
+    align-items: center;
+    background-color:#ffffff;
+	border-radius: 28px;
+	border: 3px solid #D9D9D9;
+	color: #000000;
+    height: 54px;
+    text-decoration:none;
+    padding-right: 1px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.mobile-marg-top {
+    margin-right: 0%;
+}
+
+.marg-filtre-titre {
+    margin-right: 20px;
+}
+
+.circle {
+    display: block;
+    background-color: #DEEBFF;
+    position: relative;
+    width: 55px;
+    height: 54px;
+    border-radius: 50%;
+    margin-left: -9px;
+}
+
+.icons {
+    align-items: center;
+    color: #0065FC;
+    width: 55px;
+    height: 55px;
+}
+
+.myButton:hover .rotate{
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+.myButton:hover .circle{
+    background-color: #0065FC;
+    transition: all 0.5s;
+}
+
+.myButton:hover .icons{
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.text-button {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 2.5%;
+}
+
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+/* ------------------------------------------------------ */
+/* -------------- section 2 ----------------------------- */
+/* ------------------------------------------------------ */
+
+.aligner {
+    display: inline-flex;
+}
+
+.Responsive-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titreBloc {    /* --- utilisé pour hebergement à marseille et les plus populaires --- */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.partition1 {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 60%;
+    max-width: 100%;
+    min-height: 750px; /* Permet de lock la partition 2 sur la meme hauteur que la 1 */
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.bloc1 {
+    height: 50%;
+    margin-bottom: 2%;
+}
+
+.Responsive-Bloc1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offre1 {
+    background-color: white;
+    width: 30%;
+    min-height: 260px;
+    height: 100%;
+    padding: 0%;
+    padding-bottom: 1px;
+    margin: 0;
+    border-radius: 30px;
+    border: 6px solid white;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+}
+
+.MoreInformation{
+    margin: 5% 0% 5% 0% ;
+    color: black;
+}
+
+.partition2 {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    min-width: 295px; /* Pour garder les 2 partitions a hauteur égale (titre retour à la ligne qui derange) */
+    width: 30%;
+    min-height: 750px;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.bloc2 {
+    height: 50%;
+    margin-top: 2%;
+}
+
+.offre2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border: 6px solid white;
+    border-radius: 30px;
+    width: 98%;
+    margin-bottom: 10%;
+    border: 6px solid white;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+}
+
+.Titre-Offre2 > h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+.Position-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Info-Populaires {
+
+    height: 140px;
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+.img-populaires {
+    object-fit: cover;
+    width: 35%;
+    height: 173px;
+    border-radius: 27px 0 0 27px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------ intégration photo Section 2 ------------- */
+/* ------------------------------------------------------ */
+
+.Hebergement {
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 8px;
+    height: 300px;
+}
+
+.Info-Hebergements {
+    margin-left: 4%;
+    width: 95%;
+    min-height: 80px;
+    height: 90px;
+    max-height: 100%;
+    margin-bottom: 2%;
+}
+
+.img-hebergements1 {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 2%;
+    border-radius: 27px 27px 0 0;
+}
+
+.img-populaires1 {
+    object-fit: cover;
+    width: 163.2px;
+    height: 180px;
+    border-radius: 27px 0 0 27px;
+}
+
+.img-populaires-redimension {      /* ------------ offre2 "hotel tout bleu et blanc" exclusif ------------- */
+    object-fit: cover;
+    min-width: 162px;
+    width: 100%;
+    height: 180px;
+    border-radius: 27px 0 0 27px;
+}
+
+/* ------------------------------------------------------ */
+/* ----------  Section 3 Activité à Marseille ----------- */
+/* ------------------------------------------------------ */
+
+.information3 {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+}
+
+.article1 {
+    margin: 0px 40px 0px 0px;
+}
+
+.article3 {
+    margin: 0px 40px 0px 40px;
+}
+
+.size-article {
+    
+}
+
+.size-large {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.size-large1 > * {   /* partition égale activités à marseille */
+    width: 100%;
+}
+
+.titre-activites {
+    margin-top: 60px;
+}
+
+.Responsive-flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Responsive-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*------- image pour charque section d'article ------------------------ */
+
+.img-activites1 {
+    object-fit: cover;
+    width: 100%;
+    height: 633px;
+    border-radius: 30px 30px 0 0;
+}
+
+.img-activites2 {
+    object-fit: cover;
+    width: 100%;
+    height: 355px;
+    border-radius: 30px 30px 0 0;
+}
+
+.img-activites3 {
+    object-fit: cover;
+    width: 100%;
+    height: 162px;
+    border-radius: 30px 30px 0 0;
+}
+
+.img-activites4 {
+    object-fit: cover;
+    width: 100%;
+    height: 633px;
+    border-radius: 30px 30px 0 0;
+}
+
+.img-activites5 {
+    object-fit: cover;
+    width: 100%;
+    height: 258px;
+    border-radius: 30px 30px 0 0;
+}
+
+.img-activites6 {
+    object-fit: cover;
+    width: 100%;
+    height: 260px;
+    border-radius: 30px 30px 0 0;
+}
+
+.contenue {
+    background-color: white;
+    border-radius: 30px;
+    margin: 0px;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    margin: 20px 0px 20px 0px;
+}
+
+.contenue1 {
+    background-color: white;
+    border-radius: 30px;
+    height: 100%;
+    margin: 0px;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    margin: 20px 0px 20px 0px;
+}
+
+.contenue2 {
+    background-color: white;
+    border-radius: 30px;
+    margin: 0px;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    margin: 20px 0px 20px 0px;
+}
+
+.contenue3 {
+    background-color: white;
+    border-radius: 30px;
+    margin: 0px;
+    box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    margin: 20px 0px 20px 0px;
+}
+
+
+/* ------------------------------------------------------ */
+/* -------------- Filtre -------------------------------- */
+/* ------------------------------------------------------ */
+
+
+
+@media screen and (max-width: 992px) {   /* VERSION TABLETTE Responsive */
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .myButton {
+        display: flex;
+        align-items: center;
+        background-color:#ffffff;
+        border-radius: 28px;
+        border: 3px solid #D9D9D9;
+        color: #000000;
+        height: 54px;
+        text-decoration:none;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-marg-top {
+        margin-top: 13px;
+    }
+
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.5%;
+    }
+
+    .aligner {
+        display: inline-flex;
+    }
+
+    .Responsive-section2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    
+    .titreBloc {    /* --- utilisé pour hebergement à marseille et les plus populaires --- */
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .partition1 {
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        width: 88%;
+        min-height: 750px; /* Permet de lock la partition 2 sur la meme hauteur que la 1 */
+        height: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 20px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    
+    .bloc1 {
+        height: 50%;
+        margin-bottom: 2%;
+    }
+    .offre1 {
+        background-color: white;
+        width: 30%;
+        min-height: 260px;
+        height: 100%;
+        padding: 0%;
+        padding-bottom: 1px;
+        margin: 0;
+        border-radius: 20px;
+        border: 6px solid white;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    }
+    
+    .MoreInformation{
+        margin: 5% 0% 5% 0% ;
+        color: black;
+    }
+
+    .tablette-activites {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .partition2 {
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        min-width: 295px; /* Pour garder les 2 partitions a hauteur égale (titre retour à la ligne qui derange) */
+        width: 88%;
+        min-height: 750px;
+        height: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .bloc2 {
+        height: 50%;
+        margin-top: 2%;
+    }
+    
+    .offre2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        border: 6px solid white;
+        border-radius: 30px;
+        width: 98%;
+        margin-bottom: 3%;
+        border: 6px solid white;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    }
+    
+    .Position-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .Info-Populaires {
+        height: 140px;
+        padding-left: 5%;
+    }
+    
+    .img-populaires {
+        object-fit: cover;
+        width: 35%;
+        height: 173px;
+        border-radius: 27px 0 0 27px;
+    }
+
+    .size-article {
+        width: 100%;
+    }
+
+    .size-large {
+        display:flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .size-large1 > * {   /* partition égale activités à marseille */
+        
+    }
+
+    .titre-activites {
+        margin-top: 60px;
+        margin-left: 2%;
+    }
+
+    .Responsive-flex-centre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article1 {
+        width: 96%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .article3 {
+        width: 96%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .img-activites1 {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .img-activites4 {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        border-radius: 30px 30px 0 0;
+    }
+    
+
+    .Responsive-column-between {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .article2 {
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .img-activites2 {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px 30px 0 0;
+    }
+    
+    .img-activites3 {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .size-footer {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .size-class-footer {
+        width: 100%;
+        margin-right: 10%;
+        white-space:nowrap;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {   /* VERSION MOBILE */
+
+
+    body {
+        background-color: #ffffff;
+        font-size: large;
+    }
+
+    .mobile-marg-top {
+        margin-top: 13px;
+    }
+
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.5%;
+    }
+
+    .Mobile-none {
+        display: none;
+    }
+
+    .PC-none {
+        display: inline;
+        margin: -8px;
+    }
+
+    .buttonSearch {
+        align-items: center;
+        background-color: #0065FC;
+        color: white;
+        border: 1px solid rgb(0, 101, 252);
+        border-radius: 12px 12px 12px 12px ;
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: none;
+    }
+
+    input[type="submit"] {
+        background: none;
+        color: inherit;
+        background-color: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 12px 12px 0px ;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+    .myButton {
+        display: flex;
+        align-items: center;
+        background-color:#ffffff;
+        border-radius: 28px;
+        border: 3px solid #D9D9D9;
+        cursor: pointer;
+        color: #000000;
+        height: 54px;
+        text-decoration:none;
+        margin-right: 15px;
+    }
+
+    .text-button {
+        font-size: 17px;
+    }
+
+    .info {
+        padding-right: 15px;
+        font-size: medium;
+    }
+
+    .aligner {
+        display: inline-flex;
+    }
+
+    .Responsive-section2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    
+    .titreBloc {    /* --- utilisé pour hebergement à marseille et les plus populaires --- */
+        margin-top: 40px;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 20px;
+    }
+    
+    .partition1 {
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+        min-height: 750px; /* Permet de lock la partition 2 sur la meme hauteur que la 1 */
+        height: 100%;
+        padding-left: 00%;
+        padding-right: 0%;
+        margin-top: 0px;
+        font-size: smaller;
+    }
+    
+    .bloc1 {
+        height: 50%;
+        margin-bottom: 0%;
+    }
+
+    .Responsive-Bloc1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .offre1 {
+        background-color: white;
+        width: 88%;
+        min-height: 200px;
+        height: 100%;
+        padding: 0%;
+        padding-bottom: 1px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+        border-radius: 20px;
+        border: 6px solid white;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    }
+
+    .Info-Hebergements {
+        margin-left: 4%;
+        width: 95%;
+        min-height: 60px;
+        height: 60px;
+        max-height: 100%;
+        margin-bottom: 2%;
+    }
+
+    .img-hebergements1 {
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 2%;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .MoreInformation{
+        margin: 5% 0% 7% 5% ;
+        color: black;
+    }
+
+    .tablette-activites {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .partition2 {
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        min-width: 295px; /* Pour garder les 2 partitions a hauteur égale (titre retour à la ligne qui derange) */
+        width: 100%;
+        min-height: auto;
+        padding-bottom: 15px;
+        height: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: smaller;
+    }
+    
+    .bloc2 {
+        height: 50%;
+        margin-top: 0%;
+    }
+    
+    .offre2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        border: 6px solid white;
+        border-radius: 20px;
+        width: 88%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+        border: 6px solid white;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+    }
+    
+    .Titre-Offre2 > h3 {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .Position-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .Info-Populaires {
+        height: 140px;
+        padding-left: 5%;
+    }
+    
+    .img-populaires {
+        object-fit: cover;
+        width: 40%;
+        height: 150px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .size-article {
+        width: 100%;
+    }
+
+    .size-large {
+        display:flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .size-large1 > * {   /* partition égale activités à marseille */
+        
+    }
+
+    .titre-activites {
+        margin-top: 60px;
+        margin-left: 2%;
+    }
+
+    .Responsive-flex-centre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contenue {
+        background-color: white;
+        border-radius: 30px;
+        margin: 0px;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+        margin: 20px 0px 20px 0px;
+    }
+    
+    .contenue1 {
+        background-color: white;
+        border-radius: 20px;
+        height: 100%;
+        margin: 0px;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+        margin: 20px 0px 20px 0px;
+    }
+    
+    .contenue2 {
+        background-color: white;
+        border-radius: 20px;
+        margin: 0px;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+        margin: 20px 0px 20px 0px;
+    }
+    
+    .contenue3 {
+        background-color: white;
+        border-radius: 20px;
+        margin: 0px;
+        box-shadow: 4px 4px 11px -2px rgba(0,0,0,0.2);
+        margin: 20px 0px 20px 0px;
+    }
+
+    .article1 {
+        width: 92.4%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .article3 {
+        width: 92.4%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    .Responsive-column-between {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article2 {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .img-activites1 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .img-activites2 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .img-activites3 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .img-activites4 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .img-activites5 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .img-activites6 {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    .size-footer {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .size-class-footer {
+        width: 100%;
+        margin-right: 10%;
+        white-space:nowrap;
+    }
+
+}

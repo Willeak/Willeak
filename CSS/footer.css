@@ -1,0 +1,57 @@
+/* ------------------------------------------------- */
+/* -------------- FOOTER --------------------------- */
+/* ------------------------------------------------- */
+
+
+footer {
+    background-color: #F2F2F2;
+    width: auto;
+    min-height: 210px;
+    margin: 0 auto;
+    margin-top: 50px;
+    bottom:0;
+    padding-top: 25px;
+    padding-left: 2.5%;
+}
+
+.size-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.size-class-footer {
+   /* min-width: 230px; */
+}
+
+.size-class-footer > h3 {
+    margin: 00px 0px 30px 0px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {   /* VERSION MOBILE */
+
+    .size-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    .size-class-footer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+     }
+
+
+}

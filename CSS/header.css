@@ -1,0 +1,123 @@
+/* ------------------------------------------------- */
+/* -------------- HEADER --------------------------- */
+/* ------------------------------------------------- */
+
+.Responsive-Mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.LogoBooki {
+    width: 120px;
+    margin-top: 39px;
+}
+
+.Responsive-Logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: inline;
+    text-align: center;
+    padding-top: 44px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.menu:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    text-align: center;
+    padding-top: 41px;
+}
+
+.TitreHeader {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 2.5%;
+    width: 100%;
+    
+}
+
+.size-nav {
+    height: auto;
+    margin: -9px 0px 0px 0px;
+    margin-left: 3%;
+}
+
+.size-lien12 {
+    margin-left: 0%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 768px) {   /* VERSION MOBILE */
+
+    .Responsive-Mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Responsive-Logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .size-lien12 {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .size-lien12 > *{
+        width: 50%;
+    }
+    
+    .size-nav {
+        height: auto;
+        margin: 0px 0px 0px 0px;
+        margin-left: 0%;
+    }
+
+    .LogoBooki {
+        width: 120px;
+        margin-top: 39px;
+        margin-left: 40px;
+    }
+
+    .menu {
+        border-bottom: 3px solid #F2F2F2;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        font-size: large;
+    }
+
+    .menu:hover {
+        border-top: 0px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 25px;
+        color: #0065FC;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .TitreHeader {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        margin-left: 2.5%;
+        width: 100%;
+        
+    }
+
+
+
+
+}
